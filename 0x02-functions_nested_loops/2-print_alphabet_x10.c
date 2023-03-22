@@ -2,19 +2,17 @@
 /**
  * Prints_alphabet - print all alphabet
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	char l = 'a';
-	int i = 0;
+	char l;
+	int i;
 
-	while (i < 10)
+	for (i = 0; i < 10; i++)
 	{
-		while (l <= 'z')
+		for (l = 'a'; l <= 'z'; l++)
 		{
 			_putchar(l);
-			l++;
 		}
 		_putchar('\n');
-		i++;
 	}
 }
