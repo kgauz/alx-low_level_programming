@@ -2,7 +2,14 @@
 /**
  * Description: return absolute
  */
-int _abs(int)
+int _abs(int n)
 {
-	return abs(int j);
+	if (n > 0)
+	{
+		return (n);
+	}
+	else
+	{
+		return (-n);
+        }
 }
