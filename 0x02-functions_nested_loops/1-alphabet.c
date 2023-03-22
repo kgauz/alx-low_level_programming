@@ -4,15 +4,14 @@
  * Description: prints lowercase alphabet
  * Return: always 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	int n = 97;
+	char l = 'a';
 
-	while (n <= 122)
+	while (l <= 'z')
 	{
-		putchar(n);
-		n++;
+		putchar(l);
+		l++;
 	}
 	putchar('\n');
-	return (0);
 }
