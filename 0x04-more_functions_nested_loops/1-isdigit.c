@@ -3,7 +3,7 @@
 #include <ctype.h>
 /**
  * Description - return 1 if c is a digit
- * otherwise return 0
+ * Return: 0 or 1
  */
 int _isdigit(int c)
 {
