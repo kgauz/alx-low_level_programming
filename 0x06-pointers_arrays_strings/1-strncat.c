@@ -1,8 +1,10 @@
 #include "main.h"
+#include <string.h>
 /**
  * char *_strncat - concatenates two strings
  * @dest: receive value from src
- * @srs: add value to dest
+ * @src: add value to dest
+ * @n: contain the size of src
  * Return: string
  */
 char *_strncat(char *dest, char *src, int n)
@@ -14,5 +16,6 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest[length + i] = src[i];
 	}
+	dest[length + i] = '\0';
 	return (dest);
 }
