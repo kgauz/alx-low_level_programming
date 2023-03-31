@@ -4,16 +4,22 @@
  * @src: lowercase string
  * Return: string
  */
-char *cap_string(char *src)
+char *cap_string(char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; src[i] != '\0'; i++)
+	while ( str[i])
 	{
-		if (src[i] >= 'a' && src[i] <= 'z')
+		while (!(str[i] >= 'a' && str[i] <= 'z'))
 		{
-			src[i] = src[i] - 32;
+			i++;
 		}
+		if (str[i - 1] == ' ' || str[i - 1] == '\t' || str[i - 1] == '\n'  || str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == '.' || str[i - 1] == '!' || str[i - 1] == '?' || str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')' || str[i - 1] == '{' || str[i - 1] == '}' || i == 0)
+		{
+			str[i] -= 32;
+		}
+		i++;
 	}
-	return (src);
+
+	return (str);
 }
