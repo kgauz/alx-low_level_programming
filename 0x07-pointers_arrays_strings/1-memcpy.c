@@ -4,6 +4,7 @@
  * @dest: memory area
  * @src: memory area
  * @n: size
+ * Return: pointer to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
